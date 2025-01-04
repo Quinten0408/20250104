@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>曦兒の網站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d2fcfc; /* 網頁背景顏色 */
+        }
+
+        .header {
+            font-size: 28px;
+            font-weight: bold;
+            text-align: left;
+            background-color: #d2fcfc; /* 網頁標題區塊顏色 */
+            color: #333; /* 深色文字 */
+            padding: 20px;
+            width: 100%;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .cover {
+            font-size: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            background-color: #a1ffff; /* 其他區塊顏色 */
+            color: #333; /* 深色文字 */
+            padding: 0 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .intro {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+            background-color: #a1ffff; /* 其他區塊顏色 */
+            border-radius: 15px; /* 添加圓角 */
+            text-align: left;
+        }
+
+        .intro img {
+            width: 30%;
+            height: auto; /* 保持圖片比例 */
+            border-radius: 15px; /* 設置圓角 */
+        }
+
+        .intro-content {
+            margin-left: 20px;
+        }
+
+        .intro-title {
+            font-size: 30px;
+            font-weight: bold;
+            color: #333; /* 深色文字 */
+        }
+
+        .intro-text {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #333; /* 深色文字 */
+            white-space: pre-line;
+        }
+
+        .pricing, .services, .contact {
+            padding: 20px;
+            background-color: #a1ffff; /* 其他區塊顏色 */
+            border-radius: 15px; /* 添加圓角 */
+            margin-bottom: 20px; /* 區塊間距 */
+            color: #333; /* 深色文字 */
+        }
+
+        .pricing h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .pricing table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .pricing table th, .pricing table td {
+            border: 1px solid #000000;
+            padding: 10px;
+            background-color: #ffffff;
+        }
+
+        .contact {
+            text-align: center; /* 聯絡方式區塊文字置中 */
+        }
+
+        .services {
+            text-align: center; /* 服務說明區塊文字置中 */
+        }
+        
+        .diagonal-cell {
+            position: relative;
+            height: 50px;
+            text-align: center;
+            width: 110px;
+        }
+        .diagonal-cell::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(to top left, transparent 49%, black 49%, black 51%, transparent 51%);
+            z-index: 1;
+        }
+
+        .diagonal-text-top {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .diagonal-text-bottom {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .pricing table th {
+            background-color: #cfcfcf; /* 表頭背景顏色 */
+        }
+
+        .pricing table td:nth-child(3) {
+            text-align: left; /* 文字靠左對齊 */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 網頁標題區塊 -->
+    <div class="header">
+        曦兒の網站
+    </div>
+
+    <!-- 封面區塊 -->
+    <div class="cover">
+        曦兒の遊戲代肝
+    </div>
+
+    <div class="container">
+
+        <!-- 自我介紹區塊 -->
+        <div class="intro">
+            <img src="JPG\C.jpg" alt="頭貼">
+            <div class="intro-content">
+                <div class="intro-title">曦兒</div>
+                <div class="intro-text">
+                    主要以補地圖探索度為主其他活也接！<br>
+                    代肝GAME：原神、崩壞星穹鐵道<br>
+                    資歷：截自今日已有5個月代齡<br>
+                    目前有一位板板持續續約中！
+                </div>
+            </div>
+        </div>
+
+        <!-- 價目表區塊 1 -->
+        <div class="pricing">
+          <h2>價目表</h2>
+          <table>
+              <thead>
+                  <tr>
+                      <th class="diagonal-cell">
+                          <span class="diagonal-text-top">原神</span>
+                          <span class="diagonal-text-bottom">項目</span>
+                      </th>
+                      <th>價格</th>
+                      <th>備註</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>神瞳</td>
+                      <td>200</td>
+                      <td>有些地方卡任務的不接</td>
+                  </tr>
+                  <tr>
+                      <td>每日+活動</td>
+                      <td>50</td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>任務</td>
+                      <td>20</td>
+                      <td>1個任務20 (主線 or 世界任務)</td>
+                  </tr>
+                  <tr>
+                      <td>深境</td>
+                      <td>100</td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>幻想深境</td>
+                      <td>150</td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>晶蝶</td>
+                      <td>50</td>
+                      <td>100個晶蝶50</td>
+                  </tr>
+                  <tr>
+                      <td>滿深索</td>
+                      <td>150</td>
+                      <td>1個地區150</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+
+
+        <!-- 價目表區塊 2 -->
+        <div class="pricing">
+          <h2>價目表</h2>
+          <table>
+              <thead>
+                  <tr>
+                      <th class="diagonal-cell">
+                          <span class="diagonal-text-top">崩壞星穹鐵道</span>
+                          <span class="diagonal-text-bottom">項目</span>
+                      </th>
+                      <th>價格</th>
+                      <th>備註</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>每日+活動</td>
+                      <td>50</td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>混沌</td>
+                      <td>100</td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>虛構</td>
+                      <td>50</td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>末日</td>
+                      <td>100</td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>任務</td>
+                      <td>20</td>
+                      <td>一個任務20(主線)</td>
+                  </tr>
+                  <tr>
+                      <td>差分宇宙</td>
+                      <td>150</td>
+                      <td>一個等級10</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+
+        <!-- 聯絡方式區塊 -->
+        <div class="contact">
+            <h2>聯絡方式</h2>
+            <p>FB: 白曦兒</p>
+            <p>IG: quinten_930408</p>
+            <p>Email: quinten0408@gmail.com</p>
+        </div>
+
+        <!-- 服務說明區塊 -->
+        <div class="services">
+            <p>本服務採先使用後付款</p>
+            <p>曦兒專業跑圖、代肝<br>
+               請各位板板放心把帳號交給我<br>
+               感謝各位板板的支持！
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
